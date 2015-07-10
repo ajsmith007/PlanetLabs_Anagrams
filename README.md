@@ -2,9 +2,9 @@
 
 Main program: anagram_finder.py
 
-Requirements: Python 2.7 or Python 3.4 on Mac OS X or Ubuntu 14.04 LTS
+Requirements: Python 2.7 or Python 3.4 
 
-Execution: python anagram_finder.py
+Execution: python anagram_finder.py <dictionary of words>
 
 Instructions: An anagram is a word formed by rearranging the letters of another, like "topside" and "deposit". In some cases, there might be as many (or more) anagrams than there are characters, like "post", "spot", "stop" and "tops".
 
@@ -19,3 +19,5 @@ The output produced by your code should be in this format:
     reins, resin, rinse, risen, serin, siren
     inert, inter, niter, retin, trine
     inset, neist, snite, stein, stine, tsine
+
+Tested on Mac OS X and Ubuntu 14.04 LTS
