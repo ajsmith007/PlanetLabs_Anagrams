@@ -12,6 +12,7 @@ Write a program to find all of the anagrams in a dictionary in which there are a
 The dictionary will be a file on disk with one line per word. Your operating system likely already has such a file in /usr/dict/words or /usr/share/dict/words.
 
 The output produced by your code should be in this format:
+
     emit, item, mite, time
     merit, miter, mitre, remit, timer
     reins, resin, rinse, risen, serin, siren
