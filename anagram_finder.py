@@ -71,7 +71,7 @@ def output_anagrams(anagram_dict, min_length=4):
     logging.info('Running output_anagrams with min_length: %s' % min_length)
     counter = 0
     for k, v in anagram_dict.items():
-        if len(set(v)) >= len(k) >= min_length-1:
+        if len(set(v)) >= len(k) >= min_length:
             counter += 1
             print(', '.join(set(v)))
     logging.info('Found %s anagrams' % counter)
@@ -84,7 +84,7 @@ if __name__ == "__main__":
     logging.info('====================================================================================================')
 
     if len(sys.argv) > 2:
-        sys.stderr.write('Usage: python anagram_finder.py <dictionary of words> ')
+        sys.stderr.write('Usage: python anagram_finder.py <dictionary of words>')
         sys.exit(1)
     elif len(sys.argv) == 1:
         anagrams = find_anagrams()
