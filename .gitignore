@@ -1,0 +1,61 @@
+# Files to ignore
+*.log
+
+# Mac specific files
+.DS_Store
+
+# PyCharm folders
+.idea/
+
+# virtualenv folders
+venv
+
+# gitignore Boilerplate from GitHub
+*.py[cod]
+
+# ipython
+.ipynb_checkpoints
+
+# C extensions
+*.so
+
+# Packages
+*.whl
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+lib
+lib64
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+
+# Translations
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
+
+# Eclipse Project
+.project
+.pydevproject
+.settings
+
+# Authentication
+*.p
+*.pem
+
+
