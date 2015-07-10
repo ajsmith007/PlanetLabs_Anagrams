@@ -26,6 +26,8 @@ anagram_finder.py
 """
 __author__ = 'Drew Smith'
 __email__ = 'ajsmith007@gmail.com'
+
+import sys
 import collections
 import logging
 
@@ -69,7 +71,7 @@ def output_anagrams(anagram_dict, min_length=4):
     logging.info('Running output_anagrams with min_length: %s' % min_length)
     counter = 0
     for k, v in anagram_dict.items():
-        if len(set(v)) > len(k) >= min_length:
+        if len(set(v)) >= len(k) >= min_length-1:
             counter += 1
             print(', '.join(set(v)))
     logging.info('Found %s anagrams' % counter)
@@ -81,7 +83,13 @@ if __name__ == "__main__":
     logging.info('Staring anagram_finder.py at: %s' % start_time)
     logging.info('====================================================================================================')
 
-    anagrams = find_anagrams()
+    if len(sys.argv) > 2:
+        sys.stderr.write('Usage: python anagram_finder.py <dictionary of words> ')
+        sys.exit(1)
+    elif len(sys.argv) == 1:
+        anagrams = find_anagrams()
+    else:
+        anagrams = find_anagrams(sys.argv[1])
     output_anagrams(anagrams)
 
     logging.info('====================================================================================================')
