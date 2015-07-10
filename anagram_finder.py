@@ -24,6 +24,8 @@ anagram_finder.py
     inset, neist, snite, stein, stine, tsine
 
 """
+__author__ = 'Drew Smith'
+__email__ = 'ajsmith007@gmail.com'
 import collections
 import logging
 
@@ -84,6 +86,6 @@ if __name__ == "__main__":
 
     logging.info('====================================================================================================')
     end_time = datetime.datetime.now()
-    logging.info('Completed anagram_finder.py at: %s (Completion time: %s)' % (end_time, end_time - start_time))
+    logging.info('Completed anagram_finder.py at: %s (Execution time: %s)' % (end_time, end_time - start_time))
     logging.info('====================================================================================================')
 
