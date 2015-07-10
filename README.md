@@ -4,7 +4,7 @@ Main program: anagram_finder.py
 
 Requirements: Python 2.7 or Python 3.4 
 
-Execution: python anagram_finder.py <dictionary of words>
+Execution: python anagram_finder.py dictionary_of_words.txt
 
 Instructions: An anagram is a word formed by rearranging the letters of another, like "topside" and "deposit". In some cases, there might be as many (or more) anagrams than there are characters, like "post", "spot", "stop" and "tops".
 
