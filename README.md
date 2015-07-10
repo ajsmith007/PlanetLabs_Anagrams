@@ -1,4 +1,4 @@
-# Planet Labs Technical Assesment: Anagrams
+# Planet Labs Technical Assessment: Anagrams
 
 Main program: anagram_finder.py
 
