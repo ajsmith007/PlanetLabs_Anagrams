@@ -69,7 +69,7 @@ def output_anagrams(anagram_dict, min_length=4):
     logging.info('Running output_anagrams with min_length: %s' % min_length)
     counter = 0
     for k, v in anagram_dict.items():
-        if len(set(v)) > len(k) >= min_length:
+        if len(set(v)) >= len(k) >= min_length:
             counter += 1
             print(', '.join(set(v)))
     logging.info('Found %s anagrams' % counter)
